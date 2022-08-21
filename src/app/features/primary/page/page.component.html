@@ -1,0 +1,24 @@
+
+<div [hidden]="showProgress ==true">
+
+    <div id="buttons">
+        <label class="info">{{fileName}}</label>
+        <button class="parentBtn" [ngStyle]="{'color':'blue'}" mat-icon-button title="Select File to Upload" (click)="fileInput.click()"><mat-icon class="btn">attach_file</mat-icon></button>
+        <button class="parentBtn" [ngStyle]="{'color':butCol}" mat-icon-button title="Upload" (click)="uploadFile()" [disabled]="uploadDisabled == true"><mat-icon class="btn">save</mat-icon></button>
+    
+    </div>
+   
+</div>
+<input #fileInput type="file" hidden (change)="doFileInput($event)">
+<div [hidden]="showProgress ==false"> 
+
+    <mat-spinner [diameter]="160" class="spinner" color="primary"></mat-spinner>
+</div>
+<div class="drop" [hidden]="showProgress ==true">
+    <label ><b>Result:</b></label><br/>
+    <div >
+        <div *ngFor="let item of data">{{item | json}}</div>
+
+      </div>
+</div>
+

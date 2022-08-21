@@ -1,0 +1,61 @@
+.mainDiv{
+    margin-left: 50px;
+    margin-top: 50px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.txt{
+    width:500px;
+    height:40px;
+    max-width: 1000px;
+    max-height: 40px;
+}
+
+.parentBtn{
+    width:40px;
+    height: 40px;
+
+}
+
+.info{
+    margin-right: 10px;
+    margin-left:15px;
+    width: 800px;
+    min-width: 800px;
+}
+
+
+
+.parentBtn2{
+    width:140px;
+    height: 40px;
+    border-style: groove;
+    border-width: 2px;
+
+}
+
+.btn{
+    font-size: 26px;
+}
+
+#txtArea,#buttons{
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.spinner {
+    position: fixed;
+    z-index: 1031;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .drop{ 
+    margin-top: 50px;
+    margin-left:50px;
+}
